@@ -3,7 +3,6 @@ import random
 
 TARGET = 'Me thinks it is like a weasel'
 RESULT_STRING = ''
-SCORE = 0
 ALPHABET = ' ' + string.ascii_letters
 CHANCE_OF_MUTATION = 10
 GENERATIONS = 100
