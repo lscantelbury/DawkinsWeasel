@@ -5,7 +5,6 @@ TARGET = 'Me thinks it is like a weasel'
 RESULT_STRING = ''
 ALPHABET = ' ' + string.ascii_letters
 CHANCE_OF_MUTATION = 10
-GENERATIONS = 100
 
 def generateRandomString():
 
