@@ -40,7 +40,7 @@ public class Main {
     }
     static void mutate(){
         Random generator = new Random();
-        if (generator.nextInt() < CHANCE_OF_MUTATION){
+        if (generator.nextInt(0, 100) < CHANCE_OF_MUTATION){
             int randomIntFromString = generator.nextInt(0, RESULT_STRING.length());
             char randomCharFromString = RESULT_STRING.charAt(randomIntFromString);
 
