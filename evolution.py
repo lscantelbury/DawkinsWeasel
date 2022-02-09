@@ -1,5 +1,6 @@
 import string
 import random
+import time
 
 TARGET = 'Me thinks it is like a weasel'
 RESULT_STRING = ''
@@ -52,4 +53,9 @@ def generations():
         generation += 1 # Increases the generation by one
 
 if __name__ == "__main__":
+    start = time.time()
     generations()
+    end = time.time()
+    print(f"Time: {round((end-start) * 1000)} miliseconds")
+
+    
