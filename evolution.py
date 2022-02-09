@@ -25,7 +25,7 @@ def mutate():
     global SCORE
 
     # Mutates according to its mutation ratio
-    if random.random() < CHANCE_OF_MUTATION:
+    if random.randint(0, 100) < CHANCE_OF_MUTATION:
         listOfString = list(RESULT_STRING) # Slices the RESULT_STRING
         listOfAlphabet = list(ALPHABET) # Slices the ALPHABET
 
