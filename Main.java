@@ -18,12 +18,16 @@ public class Main {
     public static void main(String[] args) {
         int generation = 1;
         generatesRandomString();
-
+        
+        long start = System.currentTimeMillis();
         while (!RESULT_STRING.equals(TARGET)){
             mutate();
             System.out.println(RESULT_STRING + " - Generation " + generation);
             generation++;
         }
+        long end = System.currentTimeMillis();
+        System.out.println("Time: "+ (end - start)+ " miliseconds");
+
     }
 
     static void generatesRandomString(){
