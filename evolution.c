@@ -42,10 +42,14 @@ int main() {
     srand((unsigned ) time(&t));
     generatesRandomString(TARGET, RESULT_STRING);
 
+    clock_t start = clock();
     while(strcmp(RESULT_STRING, TARGET) != 0){
         mutate(TARGET, RESULT_STRING);
         printf("%s - Generation %d\n", RESULT_STRING, generation);
         generation++;
     }
+    clock_t end = clock();
+    printf("Time: %f - miliseconds", (double)(end - start) * 1000/CLOCKS_PER_SEC );
+
     return 0;
 }
