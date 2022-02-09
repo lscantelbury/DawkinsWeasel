@@ -12,7 +12,7 @@ char ALPHABET[] =
                 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
                 'Y', 'Z'
         };
-int CHANCE_OF_MUTATION = 10;
+int CHANCE_OF_MUTATION = 20;
 
 void generatesRandomString(char* target, char* resultString){
     char ch;
